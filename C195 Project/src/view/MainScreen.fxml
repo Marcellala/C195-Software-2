@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreen">
+   <children>
+      <VBox alignment="CENTER" layoutX="330.0" layoutY="200.0" prefHeight="200.0" prefWidth="141.0" spacing="30.0">
+         <children>
+            <Button fx:id="customerButton" mnemonicParsing="false" onAction="#onCustomerButton" prefHeight="30.0" prefWidth="115.0" text="Customers">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="appointmentButton" mnemonicParsing="false" onAction="#onAppointmentButton" prefHeight="30.0" prefWidth="115.0" text="Appointments">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="reportButton" mnemonicParsing="false" onAction="#onReportButton" prefWidth="115.0" text="Reports">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children></VBox>
+      <Label layoutX="269.0" layoutY="151.0" text="Scheduling Application">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="496.0" layoutY="430.0" mnemonicParsing="false" onAction="#onExitButton" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+2022-02-08T13:16:33.779806900-05:00[America/New_York] ,test has logged in
+2022-02-08T13:17:30.436225100-05:00[America/New_York] ,test has logged in
+2022-02-08T13:18:36.388778300-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T13:18:54.350325600-05:00[America/New_York] ,test has failed to log in
+2022-02-08T13:26:17.414224200-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T13:26:45.156928-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T13:29:57.236562900-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T13:51:19.618448800-05:00[America/New_York] user: 'test' has logged in2022-02-08T13:52:18.209126-05:00[America/New_York] user: 'test' has logged in has been recorded successfully2022-02-08T13:53:23.138801500-05:00[America/New_York] user: 'test' has logged in has been recorded successfully2022-02-08T13:54:08.635617900-05:00[America/New_York] user: 'test' has logged in has been recorded successfully2022-02-08T13:54:46.547676900-05:00[America/New_York] user: 'test' has logged in has been recorded successfully2022-02-08T14:04:57.033519900-05:00[America/New_York] user: 'test' has logged in has been recorded successfully2022-02-08T14:05:39.686588200-05:00[America/New_York] user: 'test' has logged in has been recorded successfully2022-02-08T14:09:01.474616100-05:00[America/New_York] user: 'test' has logged in2022-02-08T14:47:06.550373700-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T14:53:11.109953200-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T15:07:44.026329500-05:00[America/New_York] ,test has failed to log in
+2022-02-08T15:21:49.306849300-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T15:22:27.242296800-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T15:22:59.347264900-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T15:23:55.133667100-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T15:26:15.247791200-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T15:27:08.809335800-05:00[America/New_York] ,test has failed to log in
+2022-02-08T15:27:11.153371700-05:00[America/New_York] user: 'test' has logged in
+2022-02-08T15:27:54.845133100-05:00[America/New_York] user: 'test' has logged in

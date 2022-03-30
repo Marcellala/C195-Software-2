@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportScreen">
+   <children>
+      <TabPane layoutX="70.0" layoutY="104.0" prefHeight="390.0" prefWidth="870.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="totalTypeTab" text="Appointments by Type and Month">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="731.0">
+                     <children>
+                        <TableView fx:id="totalTable" layoutX="199.0" layoutY="24.0" prefHeight="313.0" prefWidth="420.0">
+                          <columns>
+                            <TableColumn fx:id="monthCol" prefWidth="137.0" text="Month" />
+                            <TableColumn fx:id="totalTypeCol" prefWidth="189.0" text="Type" />
+                              <TableColumn fx:id="totalCol" prefWidth="92.0" text="Total" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="contactComboBox" onSelectionChanged="#onContactComboBox" text="Schedule for Contacts">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="contactScheduleTable" layoutY="93.0" prefHeight="272.0" prefWidth="870.0">
+                          <columns>
+                            <TableColumn fx:id="appointmentIdCol" prefWidth="107.0" text="Appointment ID" />
+                            <TableColumn fx:id="titleCol" prefWidth="125.0" text="Title" />
+                              <TableColumn fx:id="typeCol" prefWidth="133.0" text="Type" />
+                              <TableColumn fx:id="descriptionCol" prefWidth="174.0" text="Description" />
+                              <TableColumn fx:id="startCol" prefWidth="130.0" text="Start" />
+                              <TableColumn fx:id="endCol" prefWidth="126.0" text="End" />
+                              <TableColumn fx:id="customerIdCol" prefWidth="74.0" text="CustomerID" />
+                          </columns>
+                        </TableView>
+                        <HBox alignment="CENTER_LEFT" layoutX="6.0" prefHeight="88.0" prefWidth="332.0" spacing="30.0">
+                           <children>
+                              <Label text="Contact:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="contactBox" onAction="#onContactComboBox" prefWidth="150.0" promptText="Select Contact" />
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="totalAppsByCustomer" onSelectionChanged="#totalAppsByCustomerAction" text="Total Number of Appointments per Customer">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="totalCustomerAppsTable" layoutX="178.0" layoutY="35.0" prefHeight="291.0" prefWidth="433.0">
+                          <columns>
+                            <TableColumn fx:id="customerYearCol" prefWidth="98.0" text="Year" />
+                            <TableColumn fx:id="customerNameCol" minWidth="0.0" prefWidth="212.0" text="Customer" />
+                              <TableColumn fx:id="customerTotalCol" prefWidth="122.0" text="Total Appointments" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="70.0" layoutY="41.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="doneButton" layoutX="895.0" layoutY="507.0" mnemonicParsing="false" onAction="#onDoneButton" text="Done" />
+   </children>
+</AnchorPane>
